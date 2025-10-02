@@ -43,8 +43,8 @@ section {
 }
 
 .app-bg-foto img {
-  height: 110%;  // ocupa toda a altura do container
-  width: auto;   // mantém proporção
+  height: 110%; // ocupa toda a altura do container
+  width: auto; // mantém proporção
   object-fit: cover; // corta se a proporção não bater
   margin-left: 20px; /* empurra só a imagem */
 }

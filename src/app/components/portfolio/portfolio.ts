@@ -7,13 +7,12 @@ import { ItemPortfolio } from '../../models/item-portfolio';
   templateUrl: './portfolio.html',
 })
 export class Portfolio {
-   public itensPortfolio: ItemPortfolio[] = [
+  public itensPortfolio: ItemPortfolio[] = [
     {
       titulo: 'Controle de Bar',
       urlImagem: 'controle-de-bar.png',
       urlGif: 'https://i.imgur.com/kioD02O.gif',
-      urlRepositorio:
-        'https://github.com/Iagodizlla/controle-de-bar',
+      urlRepositorio: 'https://github.com/Iagodizlla/controle-de-bar',
       stack: [
         'https://skillicons.dev/icons?i=html&theme=light',
         'https://skillicons.dev/icons?i=css&theme=light',
@@ -28,8 +27,7 @@ export class Portfolio {
       titulo: 'Gestão de Equipamentos',
       urlImagem: 'gestao-de-equipamentos.png',
       urlGif: 'https://i.imgur.com/kxM2Bre.gif',
-      urlRepositorio:
-        'https://github.com/iagodizlla/gestao-de-equipamentos',
+      urlRepositorio: 'https://github.com/iagodizlla/gestao-de-equipamentos',
       stack: [
         'https://skillicons.dev/icons?i=html&theme=light',
         'https://skillicons.dev/icons?i=css&theme=light',
@@ -44,16 +42,16 @@ export class Portfolio {
       urlGif: 'https://i.imgur.com/cAuC5j0.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/e-Agenda',
       stack: [
-          'https://skillicons.dev/icons?i=html&theme=light',
-          'https://skillicons.dev/icons?i=css&theme=light',
-          'https://skillicons.dev/icons?i=cs&theme=light',
-          'https://skillicons.dev/icons?i=net&theme=light',
-          'https://skillicons.dev/icons?i=bootstrap&theme=light',
-          'https://skillicons.dev/icons?i=javascript&theme=light',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
-          'https://skillicons.dev/icons?i=azure&theme=light',
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=css&theme=light',
+        'https://skillicons.dev/icons?i=cs&theme=light',
+        'https://skillicons.dev/icons?i=net&theme=light',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
+        'https://skillicons.dev/icons?i=javascript&theme=light',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+        'https://skillicons.dev/icons?i=azure&theme=light',
       ],
-      descricao: `A e-Agenda é um sistema web para gerenciar tarefas, contatos, compromissos, categorias e despesas. Permite cadastrar, editar, excluir e visualizar registros, com suporte a itens de tarefa, prioridades e controle de conclusão. Ideal para organização pessoal e profissional.`
+      descricao: `A e-Agenda é um sistema web para gerenciar tarefas, contatos, compromissos, categorias e despesas. Permite cadastrar, editar, excluir e visualizar registros, com suporte a itens de tarefa, prioridades e controle de conclusão. Ideal para organização pessoal e profissional.`,
     },
     {
       titulo: 'E-Agenda-Orm',
@@ -61,16 +59,16 @@ export class Portfolio {
       urlGif: 'https://i.imgur.com/cAuC5j0.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/e-Agenda-ORM',
       stack: [
-          'https://skillicons.dev/icons?i=html&theme=light',
-          'https://skillicons.dev/icons?i=css&theme=light',
-          'https://skillicons.dev/icons?i=cs&theme=light',
-          'https://skillicons.dev/icons?i=net&theme=light',
-          'https://skillicons.dev/icons?i=bootstrap&theme=light',
-          'https://skillicons.dev/icons?i=javascript&theme=light',
-          'https://skillicons.dev/icons?i=postgresql&theme=light',
-          'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/render.svg'
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=css&theme=light',
+        'https://skillicons.dev/icons?i=cs&theme=light',
+        'https://skillicons.dev/icons?i=net&theme=light',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
+        'https://skillicons.dev/icons?i=javascript&theme=light',
+        'https://skillicons.dev/icons?i=postgresql&theme=light',
+        'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/render.svg',
       ],
-      descricao: `A e-Agenda é um sistema web para gerenciar tarefas, contatos, compromissos, categorias e despesas. Permite cadastrar, editar, excluir e visualizar registros, com suporte a itens de tarefa, prioridades e controle de conclusão. Ideal para organização pessoal e profissional.`
+      descricao: `A e-Agenda é um sistema web para gerenciar tarefas, contatos, compromissos, categorias e despesas. Permite cadastrar, editar, excluir e visualizar registros, com suporte a itens de tarefa, prioridades e controle de conclusão. Ideal para organização pessoal e profissional.`,
     },
     {
       titulo: 'Controle de Cinema',
@@ -92,7 +90,7 @@ export class Portfolio {
         'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/selenium.svg',
         'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/moq.svg',
       ],
-      descricao: `O Controle de Cinema tem como objetivo gerenciar filmes, sessões e ingressos de forma prática e organizada, permitindo que empresas administrem filmes, salas e sessões, enquanto clientes podem visualizar opções, escolher lugares e comprar ingressos.`
+      descricao: `O Controle de Cinema tem como objetivo gerenciar filmes, sessões e ingressos de forma prática e organizada, permitindo que empresas administrem filmes, salas e sessões, enquanto clientes podem visualizar opções, escolher lugares e comprar ingressos.`,
     },
     {
       titulo: 'Site Pessoal',
@@ -100,11 +98,11 @@ export class Portfolio {
       urlGif: 'https://i.imgur.com/AEdcdKF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/Site_Prototipo',
       stack: [
-          'https://skillicons.dev/icons?i=html&theme=light',
-          'https://skillicons.dev/icons?i=css&theme=light',
-          'https://skillicons.dev/icons?i=javascript&theme=light',
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=css&theme=light',
+        'https://skillicons.dev/icons?i=javascript&theme=light',
       ],
-      descricao: `Este é o meu site pessoal, onde compartilho informações sobre mim, meu server de Minecraft e minigames, como torneios e batalhas em equipes.`
+      descricao: `Este é o meu site pessoal, onde compartilho informações sobre mim, meu server de Minecraft e minigames, como torneios e batalhas em equipes.`,
     },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;
