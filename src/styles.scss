@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'bootstrap';
+@use 'bootstrap-icons';
+
+$cor-principal: #ec6afa;
+$cor-secundaria: #6d2bc2;
+
+$cor-background-1: #6d2bc2;
+$cor-background-2: #242527;
+
+section {
+  display: flex;
+
+  min-height: 100vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.app-background-secundario {
+  background-color: $cor-background-1;
+}
+
+.app-banner-text {
+  background: linear-gradient(90deg, rgba(229, 62, 168, 0.906), rgba(236, 200, 254, 0.925) 60%);
+  background-clip: text;
+  color: transparent;
+}
+
+.app-btn-principal {
+  background-color: $cor-principal;
+
+  &:hover {
+    background-color: #af7fee;
+  }
+}
+
+.app-bg-foto {
+  background: linear-gradient(90deg, rgba(229, 62, 168, 0.906), rgba(172, 47, 189, 0.925) 60%);
+  border-radius: 33% 67% 53% 47% / 66% 41% 59% 34%;
+  height: 22rem;
+  width: 22rem;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.app-bg-foto img {
+  height: 110%;  // ocupa toda a altura do container
+  width: auto;   // mantém proporção
+  object-fit: cover; // corta se a proporção não bater
+  margin-left: 20px; /* empurra só a imagem */
+}
