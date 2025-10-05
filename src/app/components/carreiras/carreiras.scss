@@ -1,0 +1,94 @@
+.carreiras-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-top: 7rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.carreira-card {
+  scroll-snap-align: start;
+  width: 410px;
+  height: 400px;
+  transition: transform 0.2s ease;
+  transform-origin: bottom center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+#stackCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .carreira-card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .carreiras-container {
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  .seta {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .carreira-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .carreiras-container {
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  .seta {
+    display: none;
+  }
+}
+
+.stack-icon {
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}

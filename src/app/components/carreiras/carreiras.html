@@ -1,0 +1,29 @@
+<section id="carreiras" class="app-background py-5 position-relative app-background-secundario">
+  <div class="container">
+    <h2 class="display-5 fw-bold text-center mb-4">Formação</h2>
+
+    <p class="fs-5 text-center mb-4">
+      Explore minha formação acadêmica, destacando os cursos e conhecimentos adquiridos que fortalecem minha base como desenvolvedor e preparam para desafios profissionais futuros.
+    </p>
+
+    <div #container class="carreiras-container d-flex gap-4 overflow-auto pb-3 px-2 mt-4">
+      @for (item of itensCarreira; track $index) {
+        <div class="card carreira-card flex-shrink-0 text-center bg-dark text-white border-0 rounded-4">
+          <img [src]="item.logo" alt="{{ item.instituicao }}" class="rounded-3 mb-3 pt-3"/>
+
+          <h5 class="fw-bold mb-1">{{ item.titulo }}</h5>
+          <small class="text-secondary mb-2">{{ item.periodo }}</small>
+
+          <p class="text-secondary fw-semibold mb-1">{{ item.instituicao }}</p>
+
+           <span id="stackCard" class="d-flex justify-content-center gap-1 mt-2">
+              @for (itemStack of item.stacks; track $index) {
+                <img [src]="itemStack" class="stack-icon" alt="stack" />
+              }
+            </span>
+          <p class="mb-0 px-4 py-2">{{ item.descricao }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -7,10 +7,11 @@ import { IconesHabilidades } from './components/icones-habilidades/icones-habili
 import { Portfolio } from './components/portfolio/portfolio';
 import { Contato } from './components/contato/contato';
 import { Certificados } from "./components/certificados/certificados";
+import { Carreiras } from "./components/carreiras/carreiras";
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Banner, Sobre, Habilidades, IconesHabilidades, Portfolio, Certificados, Contato],
+  imports: [Navbar, Banner, Sobre, Habilidades, IconesHabilidades, Portfolio, Certificados, Carreiras, Contato],
   templateUrl: './app.html',
 })
 export class App {}
