@@ -4,6 +4,7 @@ import { ItemPortfolio } from '../../models/item-portfolio';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.html',
+  styleUrls: ['./portfolio.scss']
 })
 export class Portfolio {
   @ViewChild('container', { static: true }) container!: ElementRef<HTMLDivElement>;
