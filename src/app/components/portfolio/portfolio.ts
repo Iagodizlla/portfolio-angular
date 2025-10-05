@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ItemPortfolio } from '../../models/item-portfolio';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [],
   templateUrl: './portfolio.html',
 })
 export class Portfolio {
+  @ViewChild('container', { static: true }) container!: ElementRef<HTMLDivElement>;
+
   public itensPortfolio: ItemPortfolio[] = [
     {
       titulo: 'Controle de Bar',
@@ -106,4 +107,10 @@ export class Portfolio {
     },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;
+
+  rolar(direcao: number) {
+    const container = this.container.nativeElement;
+    const largura = 340;
+    container.scrollBy({ left: direcao * largura, behavior: 'smooth' });
+  }
 }
