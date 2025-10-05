@@ -64,3 +64,27 @@
     right: 40px;
   }
 }
+
+/* ================== Responsividade ================== */
+@media (max-width: 1024px) {
+  .certificado-card {
+    width: 80%;
+  }
+
+  .certificados-container {
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificado-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .certificados-container {
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+}
