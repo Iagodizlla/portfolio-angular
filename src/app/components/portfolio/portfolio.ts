@@ -12,7 +12,7 @@ export class Portfolio {
   public itensPortfolio: ItemPortfolio[] = [
     {
       titulo: 'Controle de Bar',
-      urlImagem: 'controle-de-bar.png',
+      urlImagem: 'projetos/controle-de-bar.png',
       urlGif: 'https://i.imgur.com/kioD02O.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/controle-de-bar',
       stack: [
@@ -27,7 +27,7 @@ export class Portfolio {
     },
     {
       titulo: 'Gestão de Equipamentos',
-      urlImagem: 'gestao-de-equipamentos.png',
+      urlImagem: 'projetos/gestao-de-equipamentos.png',
       urlGif: 'https://i.imgur.com/kxM2Bre.gif',
       urlRepositorio: 'https://github.com/iagodizlla/gestao-de-equipamentos',
       stack: [
@@ -40,7 +40,7 @@ export class Portfolio {
     },
     {
       titulo: 'E-Agenda',
-      urlImagem: 'e-agenda.png',
+      urlImagem: 'projetos/e-agenda.png',
       urlGif: 'https://i.imgur.com/cAuC5j0.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/e-Agenda',
       stack: [
@@ -57,7 +57,7 @@ export class Portfolio {
     },
     {
       titulo: 'E-Agenda-Orm',
-      urlImagem: 'e-agenda.png',
+      urlImagem: 'projetos/e-agenda.png',
       urlGif: 'https://i.imgur.com/cAuC5j0.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/e-Agenda-ORM',
       stack: [
@@ -74,7 +74,7 @@ export class Portfolio {
     },
     {
       titulo: 'Controle de Cinema',
-      urlImagem: 'controle-de-cinema.png',
+      urlImagem: 'projetos/controle-de-cinema.png',
       urlGif: 'https://i.imgur.com/K48XU9w.gif',
       urlRepositorio: 'https://github.com/runa-do-codigo/controle-de-cinema',
       stack: [
@@ -96,7 +96,7 @@ export class Portfolio {
     },
     {
       titulo: 'Site Pessoal',
-      urlImagem: 'site-pessoal.png',
+      urlImagem: 'projetos/site-pessoal.png',
       urlGif: 'https://i.imgur.com/AEdcdKF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/Site_Prototipo',
       stack: [
@@ -108,7 +108,7 @@ export class Portfolio {
     },
     {
       titulo: 'Pokédex',
-      urlImagem: 'pokedex.png',
+      urlImagem: 'projetos/pokedex.png',
       urlGif: 'https://i.imgur.com/SEU_GIF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/pokedex',
       stack: [
