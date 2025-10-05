@@ -123,6 +123,21 @@ export class Portfolio {
       ],
       descricao: `Pokédex desenvolvida em Angular, com funcionalidades de favoritar Pokémon, exibição de detalhes como sprites, sons e tipos. Projeto com foco em consumo de API, interatividade e design responsivo.`,
     },
+    {
+      titulo: 'Jogo de Adivinhação',
+      urlImagem: 'projetos/jogo-adivinhacao.png',
+      urlGif: 'https://i.imgur.com/SEU_GIF.gif',
+      urlRepositorio: 'https://github.com/Iagodizlla/jogo-de-divinhacao',
+      stack: [
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=scss&theme=light',
+        'https://skillicons.dev/icons?i=typescript&theme=light',
+        'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=nodejs&theme=light',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
+      ],
+      descricao: `Jogo interativo de adivinhação de números com níveis de dificuldade ajustáveis. Permite que o usuário escolha a dificuldade e mantém um ranking local por nível, oferecendo feedback em tempo real..`,
+    },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;
 
