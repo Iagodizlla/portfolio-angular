@@ -5,7 +5,9 @@ import { IconeHabilidade } from '../../models/icone-habilidade';
   selector: 'app-icones-habilidades',
   imports: [],
   templateUrl: './icones-habilidades.html',
+  styleUrls: ['./icones-habilidades.scss']
 })
+
 export class IconesHabilidades {
   public itensHabilidades2: IconeHabilidade[] = [
     // Linguagens

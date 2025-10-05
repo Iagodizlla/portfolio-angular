@@ -1,0 +1,17 @@
+#habilidades-tech .d-flex.flex-column img {
+  width: 75px;
+  height: auto;
+  transition: width 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  #habilidades-tech img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  #habilidades-tech .d-flex.flex-column img {
+    width: 40px;
+  }
+}
