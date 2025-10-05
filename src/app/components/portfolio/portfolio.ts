@@ -105,6 +105,22 @@ export class Portfolio {
       ],
       descricao: `Este é o meu site pessoal, onde compartilho informações sobre mim, meu server de Minecraft e minigames, como torneios e batalhas em equipes.`,
     },
+    {
+      titulo: 'Pokédex',
+      urlImagem: 'pokedex.png',
+      urlGif: 'https://i.imgur.com/SEU_GIF.gif',
+      urlRepositorio: 'https://github.com/Iagodizlla/pokedex',
+      stack: [
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=scss&theme=light',
+        'https://skillicons.dev/icons?i=typescript&theme=light',
+        'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
+        'https://cdn.simpleicons.org/prettier?viewbox=auto',
+        'https://cdn.simpleicons.org/eslint/4B32C3',
+      ],
+      descricao: `Pokédex desenvolvida em Angular, com funcionalidades de busca de Pokémon por nome ou tipo, exibição de detalhes como habilidades, estatísticas e sprites. Projeto com foco em consumo de API, interatividade e design responsivo.`,
+    },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;
 
