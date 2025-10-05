@@ -4,7 +4,9 @@ import { ItemCertificado } from '../../models/item-certificado';
 @Component({
   selector: 'app-certificados',
   templateUrl: './certificados.html',
+  styleUrls: ['./certificados.scss']
 })
+
 export class Certificados {
   @ViewChild('container', { static: true }) container!: ElementRef<HTMLDivElement>;
 
