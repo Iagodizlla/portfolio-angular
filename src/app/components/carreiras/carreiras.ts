@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild} from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ItemCarreira } from '../../models/item-carreira';
 
 @Component({
@@ -6,10 +6,12 @@ import { ItemCarreira } from '../../models/item-carreira';
   templateUrl: './carreiras.html',
   styleUrls: ['./carreiras.scss']
 })
-export class Carreiras{
+export class Carreiras {
   @ViewChild('container', { static: true }) container!: ElementRef<HTMLDivElement>;
 
-  public itensCarreira: ItemCarreira[] = [
+  abaSelecionada: 'formacao' | 'experiencia' = 'formacao';
+
+  public itensFormacao: ItemCarreira[] = [
   {
     titulo: 'Técnico em Informática',
     instituicao: 'CEDUP',
@@ -87,9 +89,36 @@ export class Carreiras{
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg',
     ],
   },
-];
+  ];
 
-public itemFormacaoSelecionado?: ItemCarreira;
+// Cards de outra aba
+  public itensOutros: ItemCarreira[] = [
+    /*{
+      titulo: 'Desenvolvedor Júnior',
+      instituicao: 'NDD Tech',
+      periodo: '2024 – Atualmente',
+      descricao: 'Atuação no desenvolvimento de soluções SaaS com foco em back-end .NET e integração com ferramentas de IA generativa.',
+      logo: 'https://media.licdn.com/dms/image/C4D0BAQFLDxYBCHSzdA/company-logo_200_200/0/1630618395013.png',
+      stacks: [],
+    },*/
+  ];
+
+  public itemFormacaoSelecionado?: ItemCarreira;
+
+  // Retorna os cards da aba atual
+  get itensCarreira(): ItemCarreira[] {
+    return this.abaSelecionada === 'formacao' ? this.itensFormacao : this.itensOutros;
+  }
+
+  // Alternar abas
+  selecionarAba(aba: 'formacao' | 'experiencia') {
+    this.abaSelecionada = aba;
+
+    // Resetar rolagem para início
+    setTimeout(() => {
+      this.container.nativeElement.scrollLeft = 0;
+    }, 0);
+  }
 
   rolar(direcao: number) {
     const container = this.container.nativeElement;
