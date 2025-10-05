@@ -1,0 +1,107 @@
+<section id="certificados" class="app-background-secundario py-5 position-relative">
+  <div class="container">
+    <h2 class="display-5 fw-bold text-center mb-4">Certificados</h2>
+
+    <button class="seta seta-esquerda" (click)="rolar(-1)">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <div #container class="certificados-container d-flex gap-4 overflow-auto pb-3 px-2 mt-4">
+      @for (item of certificados; track $index) {
+        <div class="card certificado-card flex-shrink-0 text-center bg-dark text-white border-0 rounded-4">
+          <img
+            [src]="item.urlImagem"
+            alt="{{ item.titulo }}"
+            class="rounded-top-4"
+            style="width: 100%; height: 200px; object-fit: cover; padding: 5px;"
+          />
+          <div class="card-body px-3">
+            <h5 class="card-title">{{ item.titulo }}</h5>
+            <p class="card-text mb-1"><strong>Emissor:</strong> {{ item.emissor }}</p>
+            <p class="card-text"><strong>Carga horária:</strong> {{ item.cargaHoraria }}</p>
+            <a
+              [href]="item.urlCertificado"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-2"
+            >
+              <i class="bi bi-box-arrow-up-right"></i> Ver certificado
+            </a>
+          </div>
+        </div>
+      }
+    </div>
+
+    <button class="seta seta-direita" (click)="rolar(1)">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+<style>
+  .certificados-container {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-top: 7rem;
+  }
+
+  .certificados-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .certificado-card {
+    scroll-snap-align: start;
+    width: 300px;      /* largura fixa */
+    height: 400px;     /* altura fixa */
+    transition: transform 0.2s ease;
+    transform-origin: bottom center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificado-card img {
+    width: 100%;       /* ocupa toda a largura fixa do card */
+    object-fit: cover; /* mantém proporção e corta excesso */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .certificado-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .certificado-card:hover {
+    transform: scale(1.05);
+  }
+
+  .seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10;
+  }
+
+  .seta:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .seta-esquerda {
+    left: 40px;
+  }
+
+  .seta-direita {
+    right: 40px;
+  }
+</style>

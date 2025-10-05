@@ -1,0 +1,61 @@
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ItemCertificado } from '../../models/item-certificado';
+
+@Component({
+  selector: 'app-certificados',
+  templateUrl: './certificados.html',
+})
+export class Certificados {
+  @ViewChild('container', { static: true }) container!: ElementRef<HTMLDivElement>;
+
+  public certificados: ItemCertificado[] = [
+    {
+      titulo: 'Lógica de Programação com C#',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '80h',
+      urlImagem: 'certificado-logica-cs.png',
+      urlCertificado: 'https://i.imgur.com/dCTyzwO.jpeg',
+    },
+    {
+      titulo: 'Orientação a objetos em C#',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '100h',
+      urlImagem: 'certificado-objetos-cs.png',
+      urlCertificado: 'https://i.imgur.com/OipSYTx.jpeg',
+    },
+    {
+      titulo: 'Desenvolvimento Web com ASP.NET MVC',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '120h',
+      urlImagem: 'certificado-web-mvc.png',
+      urlCertificado: 'https://imgur.com/a/ltzhyZx',
+    },
+    {
+      titulo: 'Acesso a Dados com plataformas .NET',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '100h',
+      urlImagem: 'certificado-dados-plataforma.net.png',
+      urlCertificado: 'https://imgur.com/a/jRYxas1',
+    },
+    {
+      titulo: 'Lógica de Programação',
+      emissor: 'Trybe',
+      cargaHoraria: '10h',
+      urlImagem: 'certificado-logica.png',
+      urlCertificado: 'https://imgur.com/a/u2jNfdc',
+    },
+    {
+      titulo: 'JavaScript do Zero',
+      emissor: 'Trybe',
+      cargaHoraria: '10h',
+      urlImagem: 'certificado-javascript-zero.png',
+      urlCertificado: 'https://imgur.com/a/P4D6NIt',
+    },
+  ];
+
+  rolar(direcao: number) {
+    const container = this.container.nativeElement;
+    const largura = 340;
+    container.scrollBy({ left: direcao * largura, behavior: 'smooth' });
+  }
+}
