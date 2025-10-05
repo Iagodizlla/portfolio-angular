@@ -115,11 +115,12 @@ export class Portfolio {
         'https://skillicons.dev/icons?i=scss&theme=light',
         'https://skillicons.dev/icons?i=typescript&theme=light',
         'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=nodejs&theme=light',
         'https://skillicons.dev/icons?i=bootstrap&theme=light',
         'https://cdn.simpleicons.org/prettier?viewbox=auto',
         'https://cdn.simpleicons.org/eslint/4B32C3',
       ],
-      descricao: `Pokédex desenvolvida em Angular, com funcionalidades de busca de Pokémon por nome ou tipo, exibição de detalhes como habilidades, estatísticas e sprites. Projeto com foco em consumo de API, interatividade e design responsivo.`,
+      descricao: `Pokédex desenvolvida em Angular, com funcionalidades de favoritar Pokémon, exibição de detalhes como sprites, sons e tipos. Projeto com foco em consumo de API, interatividade e design responsivo.`,
     },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;

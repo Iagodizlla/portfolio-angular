@@ -38,6 +38,13 @@ export class Certificados {
       urlCertificado: 'https://imgur.com/a/jRYxas1',
     },
     {
+      titulo: 'Testes Automatizados na Plataforma .NET',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '70h',
+      urlImagem: 'certificado-testes.png',
+      urlCertificado: 'https://imgur.com/a/Bb7b8fm',
+    },
+    {
       titulo: 'Lógica de Programação',
       emissor: 'Trybe',
       cargaHoraria: '10h',
