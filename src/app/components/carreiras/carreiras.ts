@@ -87,6 +87,7 @@ export class Carreiras {
       'https://skillicons.dev/icons?i=vscode&theme=light',
       'https://cdn.simpleicons.org/prettier?viewbox=auto',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
     ],
   },
   ];

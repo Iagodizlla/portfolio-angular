@@ -120,6 +120,7 @@ export class Portfolio {
         'https://skillicons.dev/icons?i=bootstrap&theme=light',
         'https://cdn.simpleicons.org/prettier?viewbox=auto',
         'https://cdn.simpleicons.org/eslint/4B32C3',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
       ],
       descricao: `Pokédex desenvolvida em Angular, com funcionalidades de favoritar Pokémon, exibição de detalhes como sprites, sons e tipos. Projeto com foco em consumo de API, interatividade e design responsivo.`,
     },
