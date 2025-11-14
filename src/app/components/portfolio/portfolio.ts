@@ -178,6 +178,18 @@ export class Portfolio {
          'https://skillicons.dev/icons?i=azure&theme=light',
       ],
       descricao: `O Note Keeper é um sistema web para criação, edição e organização de notas. Permite gerenciar anotações de forma simples e rápida, com CRUD completo integrado entre Angular e C#. Ideal para registrar e consultar informações do dia a dia.`,
+    },{
+      titulo: 'Academia do Zé',
+      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlGif: 'https://i.imgur.com/SEU_GIF.gif',
+      urlRepositorio: 'https://github.com/Iagodizlla/AcademiaZe',
+      stack: [
+        'https://skillicons.dev/icons?i=cs&theme=light',
+        'https://skillicons.dev/icons?i=net&theme=light',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+        'https://skillicons.dev/icons?i=docker&theme=light',
+      ],
+      descricao: `O sistema Academia do Zé é uma aplicação para gerenciar as operações de uma academia, incluindo cadastro de alunos, controle de mensalidades, agendamento de aulas e gerenciamento de instrutores. Projetado para otimizar a administração e melhorar a experiência dos clientes.`,
     },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;
