@@ -160,7 +160,7 @@ export class Portfolio {
     },
     {
       titulo: 'Note Keeper',
-      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlImagem: 'projetos/note-keeper.png',
       urlGif: 'https://i.imgur.com/SEU_GIF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/note-keeper',
       stack: [
