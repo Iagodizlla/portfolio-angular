@@ -137,7 +137,27 @@ export class Portfolio {
         'https://skillicons.dev/icons?i=nodejs&theme=light',
         'https://skillicons.dev/icons?i=bootstrap&theme=light',
       ],
-      descricao: `Jogo interativo de adivinhação de números com níveis de dificuldade ajustáveis. Permite que o usuário escolha a dificuldade e mantém um ranking local por nível, oferecendo feedback em tempo real..`,
+      descricao: `Jogo interativo de adivinhação de números com níveis de dificuldade ajustáveis. Permite que o usuário escolha a dificuldade e mantém um ranking local por nível, oferecendo feedback em tempo real.`,
+    },
+    {
+      titulo: 'Note Keeper',
+      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlGif: 'https://i.imgur.com/SEU_GIF.gif',
+      urlRepositorio: 'https://github.com/Iagodizlla/note-keeper',
+      stack: [
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=scss&theme=light',
+        'https://skillicons.dev/icons?i=typescript&theme=light',
+        'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=nodejs&theme=light',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
+        'https://skillicons.dev/icons?i=net&theme=light',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
+        'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/newrelic.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+         'https://skillicons.dev/icons?i=azure&theme=light',
+      ],
+      descricao: `O Note Keeper é um sistema web para criação, edição e organização de notas. Permite gerenciar anotações de forma simples e rápida, com CRUD completo integrado entre Angular e C#. Ideal para registrar e consultar informações do dia a dia.`,
     },
   ];
   public itemPortfolioSelecionado?: ItemPortfolio;
