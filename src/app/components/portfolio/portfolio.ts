@@ -141,7 +141,7 @@ export class Portfolio {
     },
     {
       titulo: 'Organiza Med',
-      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlImagem: 'projetos/organiza-med.png',
       urlGif: 'https://i.imgur.com/SEU_GIF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/oraganiza-med',
       stack: [
