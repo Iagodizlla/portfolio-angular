@@ -47,6 +47,13 @@ export class Certificados {
       urlCertificado: 'https://imgur.com/a/Bb7b8fm',
     },
     {
+      titulo: 'Desenvolvimento de APIs Web na plataforma .NET',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '50h',
+      urlImagem: 'certificados/certificado-desenvolvimento-api.png',
+      urlCertificado: 'https://imgur.com/a/Kriekfr',
+    },
+    {
       titulo: 'Lógica de Programação',
       emissor: 'Trybe',
       cargaHoraria: '10h',
