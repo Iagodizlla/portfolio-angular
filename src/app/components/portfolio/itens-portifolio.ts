@@ -2,7 +2,7 @@ import { ItemPortfolio } from "../../models/item-portfolio";
 
 export const ITENS_PORTFOLIO: ItemPortfolio[] = [
   {
-titulo: 'Controle de Bar',
+    titulo: 'Controle de Bar',
       urlImagem: 'projetos/controle-de-bar.png',
       urlGif: 'https://i.imgur.com/kioD02O.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/controle-de-bar',
@@ -205,7 +205,8 @@ titulo: 'Controle de Bar',
           labels: ['29 Sep', '30 Sep'],
           data: [1, 4]
         }
-      }},
+      }
+    },
     {
       titulo: 'Organiza Med',
       urlImagem: 'projetos/organiza-med.png',
@@ -232,7 +233,8 @@ titulo: 'Controle de Bar',
           labels: ['12 Nov', '13 Nov', '14 Nov'],
           data: [11, 11, 3]
         }
-      }},
+      }
+    },
     {
       titulo: 'Note Keeper',
       urlImagem: 'projetos/note-keeper.png',
@@ -286,6 +288,31 @@ titulo: 'Controle de Bar',
              '1 Oct', '2 Oct', '3 Oct', '4 Oct', '5 Oct', '6 Oct', '7 Oct', '8 Oct', '9 Oct', '10 Oct'
           ],
           data: [2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 3, 4, 0, 0, 0, 1, 0, 0, 3, 0, 0, 2, 2, 0, 0, 2, 0, 0, 0, 0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+        }
+      }
+    },
+    {
+      titulo: 'Gerenciador de Filmes',
+      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlGif: 'https://i.imgur.com/SEU_GIF.gif',
+      urlRepositorio: 'https://github.com/Iagodizlla/gerenciador-filmes',
+      stack: [
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=scss&theme=light',
+        'https://skillicons.dev/icons?i=typescript&theme=light',
+        'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=nodejs&theme=light',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
+      ],
+      descricao: `O Gerenciador de Filmes é uma aplicação web desenvolvida em Angular que permite aos usuários catalogar, organizar e avaliar sua coleção de filmes. Com uma interface intuitiva, os usuários podem adicionar novos filmes, editar informações existentes e classificar seus favoritos.`,
+      detalhesD: {
+        quantidadeCommits: 22,
+        statusProjeto: 'Concluído',
+        tempoDesenvolvimento: 'Oct 9, 2025 - Oct 14, 2025',
+        frequenciaContribuicoes: {
+          labels: ['9 Oct', '10 Oct', '11 Oct', '12 Oct', '13 Oct', '14 Oct'],
+          data: [1, 0, 2, 0, 0, 19]
         }
       }
     },
