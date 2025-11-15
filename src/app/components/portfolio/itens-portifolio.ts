@@ -293,7 +293,7 @@ export const ITENS_PORTFOLIO: ItemPortfolio[] = [
     },
     {
       titulo: 'Gerenciador de Filmes',
-      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlImagem: 'projetos/gerenciador-filmes.png',
       urlGif: 'https://i.imgur.com/SEU_GIF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/gerenciador-filmes',
       stack: [
