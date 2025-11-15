@@ -6,6 +6,7 @@
       Nesta seção, apresento os projetos dos quais participei e que refletem minha experiência e habilidades como desenvolvedor. Ao clicar em cada card, um modal será exibido, proporcionando uma visualização detalhada do funcionamento de cada projeto. Cada trabalho representou uma oportunidade de aprendizado e inovação!
     </p>
 
+    <!-- Botões de rolagem -->
     <button class="seta seta-esquerda" (click)="rolar(-1)">
       <i class="bi bi-chevron-left"></i>
     </button>
@@ -18,11 +19,12 @@
             class="card-img-top rounded-top-4"
             style="max-height: 250px"
             [src]="item.urlImagem"
+            alt="{{ item.titulo }}"
           />
           <div class="card-body d-flex flex-column gap-2 h-100">
-            <span id="stackCard" class="d-flex gap-1">
+            <span id="stackCard" class="d-flex gap-1 flex-wrap">
               @for (itemStack of item.stack; track $index) {
-                <img [src]="itemStack" width="35px;" />
+                <img [src]="itemStack" width="35px" />
               }
             </span>
             <h5 id="tituloCard" class="card-title mt-2">{{ item.titulo }}</h5>
@@ -33,7 +35,6 @@
                 class="btn px-4 app-btn-principal"
                 data-bs-toggle="modal"
                 data-bs-target="#portfolioModal"
-                id="btnVerProjeto"
               >
                 <i class="bi bi-window-plus"></i>
                 Ver projeto
@@ -47,6 +48,17 @@
                 <i class="bi bi-github"></i>
                 Repositório
               </a>
+              <!-- Botão para detalhes do desenvolvedor -->
+              <button
+                type="button"
+                (click)="selecionarItem(item)"
+                class="btn btn-outline-light"
+                data-bs-toggle="modal"
+                data-bs-target="#detalhesDevModal"
+              >
+                <i class="bi bi-info-circle"></i>
+                Detalhes Dev
+              </button>
             </div>
           </div>
         </div>
@@ -59,6 +71,7 @@
   </div>
 </section>
 
+<!-- Modal de visualização do projeto -->
 <div
   class="modal fade"
   id="portfolioModal"
@@ -85,9 +98,9 @@
           class="img-fluid mb-3"
         />
 
-        <span id="stackCard" class="d-flex justify-content-center gap-1 mb-2">
+        <span id="stackCard" class="d-flex justify-content-center gap-1 mb-2 flex-wrap">
           @for (itemStack of itemPortfolioSelecionado?.stack; track $index) {
-            <img [src]="itemStack" width="35px;" />
+            <img [src]="itemStack" width="35px" />
           }
         </span>
 
@@ -101,6 +114,75 @@
         >
           <i class="bi bi-github"></i>
           Repositório
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de detalhes do desenvolvedor -->
+<div
+  class="modal fade"
+  id="detalhesDevModal"
+  tabindex="-1"
+  aria-labelledby="detalhesDevModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-white rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detalhesDevModalLabel">
+          {{ itemPortfolioSelecionado?.titulo }} - Detalhes de Desenvolvedor
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Fechar"
+        ></button>
+      </div>
+
+      <div class="modal-body modal-body-customizado">
+        <div class="row mb-3">
+          <div class="col-md-6 text-center">
+            <img
+              [src]="itemPortfolioSelecionado?.urlImagem"
+              class="img-fluid rounded mb-2"
+              alt="Imagem do projeto"
+            />
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group list-group-flush text-white">
+              <li class="list-group-item bg-dark">
+                <strong>Quantidade de commits do projeto:</strong>
+                {{ itemPortfolioSelecionado?.detalhesD?.quantidadeCommits || 'N/A' }}
+              </li>
+              <li class="list-group-item bg-dark">
+                <strong>Status do projeto:</strong>
+                {{ itemPortfolioSelecionado?.detalhesD?.statusProjeto || 'N/A' }}
+              </li>
+              <li class="list-group-item bg-dark">
+                <strong>Período de desenvolvimento:</strong><br>
+                {{ itemPortfolioSelecionado?.detalhesD?.tempoDesenvolvimento || 'N/A' }}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="mb-3">
+            <h6>Frequência de contribuições minhas no projeto</h6>
+            <canvas #contribuicoesChart></canvas>
+          </div>
+
+        </div>
+
+        <a
+          [href]="itemPortfolioSelecionado?.urlRepositorio"
+          target="_blank"
+          class="btn btn-outline-light"
+        >
+          <i class="bi bi-github"></i> Repositório
         </a>
       </div>
     </div>
