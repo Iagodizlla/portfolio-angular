@@ -5,4 +5,15 @@ export interface ItemPortfolio {
   urlGif: string;
   urlRepositorio: string;
   stack: string[];
+  detalhesD?: DetalhesD;
+}
+
+export interface DetalhesD{
+  quantidadeCommits?: number;
+  frequenciaContribuicoes?: {
+    labels: string[];
+    data: number[];
+  };
+  statusProjeto?: string;
+  tempoDesenvolvimento?: string;
 }
