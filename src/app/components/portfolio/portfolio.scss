@@ -92,3 +92,8 @@
     display: none;
   }
 }
+/* Diminui a altura do gráfico */
+canvas {
+  max-height: 250px; /* ou qualquer valor que você achar bom */
+  width: 100% !important; /* garante que ocupe a largura do container */
+}
