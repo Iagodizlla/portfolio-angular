@@ -210,7 +210,7 @@ titulo: 'Controle de Bar',
       titulo: 'Organiza Med',
       urlImagem: 'projetos/organiza-med.png',
       urlGif: 'https://i.imgur.com/SEU_GIF.gif',
-      urlRepositorio: 'https://github.com/Iagodizlla/oraganiza-med',
+      urlRepositorio: 'https://github.com/Iagodizlla/organiza-med',
       stack: [
         'https://skillicons.dev/icons?i=html&theme=light',
         'https://skillicons.dev/icons?i=scss&theme=light',
