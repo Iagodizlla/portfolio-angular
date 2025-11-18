@@ -226,7 +226,7 @@ export const ITENS_PORTFOLIO: ItemPortfolio[] = [
       ],
       descricao: `O Organiza Med é um sistema web para gerenciamento de consultas médicas, permitindo agendamento, cancelamento e visualização de consultas. Ideal para clínicas e consultórios otimizarem o atendimento aos pacientes.`,
       detalhesD: {
-        quantidadeCommits: 30,
+        quantidadeCommits: 40,
         statusProjeto: 'Concluído',
         tempoDesenvolvimento: 'Nov 12, 2025 - Nov 18, 2025',
         frequenciaContribuicoes: {
