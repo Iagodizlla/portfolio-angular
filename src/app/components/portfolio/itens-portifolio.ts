@@ -316,4 +316,26 @@ export const ITENS_PORTFOLIO: ItemPortfolio[] = [
         }
       }
     },
+    {
+      titulo: 'Locadora De Veículos',
+      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlGif: 'https://i.imgur.com/SEU_GIF.gif',
+      urlRepositorio: 'https://github.com/Iagodizlla/locadora-de-veiculos',
+      stack: [
+        'https://skillicons.dev/icons?i=cs&theme=light',
+        'https://skillicons.dev/icons?i=net&theme=light',
+        'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/newrelic.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+      ],
+      descricao: ``,
+      detalhesD: {
+        quantidadeCommits: 192,
+        statusProjeto: 'Em Desenvolvimento',
+        tempoDesenvolvimento: 'Nov 17, 2025 - ...',
+        frequenciaContribuicoes: {
+          labels: ['17 Nov', '18 Nov', '19 Nov', '20 Nov', '21 Nov', '22 Nov', '23 Nov', '24 Nov', '25 Nov'],
+          data: [3, 27, 19, 22, 14, 27, 33, 9, 38]
+        }
+      }
+    },
 ];
