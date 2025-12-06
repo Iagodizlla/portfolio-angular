@@ -326,15 +326,23 @@ export const ITENS_PORTFOLIO: ItemPortfolio[] = [
         'https://skillicons.dev/icons?i=net&theme=light',
         'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/newrelic.svg',
         'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+        'https://skillicons.dev/icons?i=html&theme=light',
+        'https://skillicons.dev/icons?i=scss&theme=light',
+        'https://skillicons.dev/icons?i=typescript&theme=light',
+        'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=nodejs&theme=light',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
+        'https://skillicons.dev/icons?i=bootstrap&theme=light',
       ],
       descricao: ``,
       detalhesD: {
-        quantidadeCommits: 192,
+        quantidadeCommits: 308,
         statusProjeto: 'Em Desenvolvimento',
         tempoDesenvolvimento: 'Nov 17, 2025 - ...',
         frequenciaContribuicoes: {
-          labels: ['17 Nov', '18 Nov', '19 Nov', '20 Nov', '21 Nov', '22 Nov', '23 Nov', '24 Nov', '25 Nov'],
-          data: [3, 27, 19, 22, 14, 27, 33, 9, 38]
+          labels: ['17 Nov', '18 Nov', '19 Nov', '20 Nov', '21 Nov', '22 Nov', '23 Nov', '24 Nov', '25 Nov', '26 Nov', '27 Nov', '28 Nov', '29 Nov', '30 Nov',
+             '1 Dec', '2 Dec', '3 Dec', '4 Dec', '5 Dec', '6 Dec', '7 Dec', '8 Dec', '9 Dec', '10 Dec',],
+          data: [3, 27, 19, 22, 14, 27, 33, 9, 38, 5, 4, 3, 26, 3, 17, 19, 8, 19, 12]
         }
       }
     },
