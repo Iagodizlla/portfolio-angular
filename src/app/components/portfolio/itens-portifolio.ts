@@ -318,7 +318,7 @@ export const ITENS_PORTFOLIO: ItemPortfolio[] = [
     },
     {
       titulo: 'Locadora De Veículos',
-      urlImagem: 'projetos/em-desenvolvimento.png',
+      urlImagem: 'projetos/locadora-veiculo.png',
       urlGif: 'https://i.imgur.com/SEU_GIF.gif',
       urlRepositorio: 'https://github.com/Iagodizlla/locadora-de-veiculos',
       stack: [
@@ -334,15 +334,15 @@ export const ITENS_PORTFOLIO: ItemPortfolio[] = [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
         'https://skillicons.dev/icons?i=bootstrap&theme=light',
       ],
-      descricao: ``,
+      descricao: `A locadora de veículos é um sistema web para gerenciar o aluguel de carros, incluindo cadastro de clientes, veículos, contratos e pagamentos. Permite controlar a disponibilidade dos veículos, agendar reservas e gerar relatórios financeiros.`,
       detalhesD: {
-        quantidadeCommits: 308,
-        statusProjeto: 'Em Desenvolvimento',
-        tempoDesenvolvimento: 'Nov 17, 2025 - ...',
+        quantidadeCommits: 361,
+        statusProjeto: 'Concluído',
+        tempoDesenvolvimento: 'Nov 17, 2025 - Dez 10, 2025',
         frequenciaContribuicoes: {
           labels: ['17 Nov', '18 Nov', '19 Nov', '20 Nov', '21 Nov', '22 Nov', '23 Nov', '24 Nov', '25 Nov', '26 Nov', '27 Nov', '28 Nov', '29 Nov', '30 Nov',
              '1 Dec', '2 Dec', '3 Dec', '4 Dec', '5 Dec', '6 Dec', '7 Dec', '8 Dec', '9 Dec', '10 Dec',],
-          data: [3, 27, 19, 22, 14, 27, 33, 9, 38, 5, 4, 3, 26, 3, 17, 19, 8, 19, 12]
+          data: [3, 27, 19, 22, 14, 27, 33, 9, 38, 5, 4, 3, 26, 3, 17, 19, 8, 19, 12, 5, 4, 3, 26, 3, 17, 19, 8, 19, 12, 4, 14, 26, 8]
         }
       }
     },
