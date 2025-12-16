@@ -54,6 +54,13 @@ export class Certificados {
       urlCertificado: 'https://imgur.com/a/Kriekfr',
     },
     {
+      titulo: 'Desenvolvedor web fullstack',
+      emissor: 'Academia do Programador',
+      cargaHoraria: '900h',
+      urlImagem: 'certificados/certificado-web-fullstack.png',
+      urlCertificado: 'https://imgur.com/a/jht891l',
+    },
+    {
       titulo: 'Lógica de Programação',
       emissor: 'Trybe',
       cargaHoraria: '10h',
